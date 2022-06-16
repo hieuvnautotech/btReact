@@ -3,6 +3,8 @@
 .App{
   margin: 0 auto;
   color: white;
+  flex-direction: row;
+  display: flex;
 }
 
 /* .card{
