@@ -4,8 +4,9 @@ const Icon = (props) => {
   const Icon = styled.img`
     width: 50%;
   `;
-  var icon = "";
-  switch (props.condition) {
+  var icon = props.condition;
+  // console.log("state is " + icon);
+  switch (icon) {
     case "Clouds":
       icon = `./img/Mostly Cloudy-2x.png`;
       break;

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import Location from "./Location";
 import Icon from "./Icon";
-import Temp from "./Temp";
+// import Temp from "./Temp";
 import Condition from "./Condition";
 const WeatherCard = ({ temp, condition, city, country }) => {
   let highColor = 0;
@@ -17,7 +17,7 @@ const WeatherCard = ({ temp, condition, city, country }) => {
     let lowColor = highColor - 150;
     bg = `linear-gradient(to top, rgb(0,${highColor},255), rgb(0,${lowColor},255));`;
   }
-  const red = 100;
+  // const red = 100;
   const Card = styled.div`
     margin: 0 auto;
     background: ${bg};
@@ -33,8 +33,8 @@ const WeatherCard = ({ temp, condition, city, country }) => {
     <Card>
       <Location city={city} country={country} />
       <Icon condition={condition} />
-      <Temp temp={temp} condition={condition} />
-      <Condition condition={condition} />
+      {/* <Temp temp={temp} condition={condition} /> */}
+      <Condition temp={temp} condition={condition} />
     </Card>
   );
 };
